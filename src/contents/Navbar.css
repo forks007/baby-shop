@@ -1,0 +1,129 @@
+.navbar {
+  background: var(--bg-color-1);
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.navbar-logo {
+  color: var(--font-color-1);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fas {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  color: var(--font-color-1);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-bottom: 4px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 4px solid rgb(52, 4, 4);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.fa-bars {
+  color: var(--font-color-1);
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.5s ease;
+    width: auto;
+    padding: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .nav-menu.active {
+    background: var(--bg-color-2);
+    right: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .nav-item {
+    color: var(--font-color-1);
+    margin: 0rem;
+    width: 100%;
+    padding: 2px 20px;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-item:hover {
+    color: var(--font-color-1);
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: var(--font-color-1);
+    font-size: 2rem;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-out;
+  }
+}

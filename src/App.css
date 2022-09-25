@@ -1,0 +1,17 @@
+:root {
+  --bg-color-1: brown;
+  --bg-color-2: rgba(246, 136, 96, 0.452);
+  --font-color-1: black;
+  --font-color-2: rgb(158, 67, 6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}

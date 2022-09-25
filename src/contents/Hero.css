@@ -1,0 +1,54 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://source.unsplash.com/FHon8lLKibM");
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  margin-top: 1rem;
+  background-color: violet;
+}
+.images {
+  background-color: rgba(246, 136, 96, 0.452);
+  width: 500px;
+  /* height: 400px; */
+  margin: 1rem;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 24% 76% 26% 74% / 100% 0% 100% 0%;
+}
+.images img {
+  /* width: 400px; */
+  height: 600px;
+  object-fit: contain;
+}
+.hero-text {
+  /* height: 200px; */
+  text-align: center;
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  /* background-color: var(--main-font-color); */
+}
+.btn {
+  position: relative;
+  padding: 15px 40px;
+  color: #fff;
+  background-color: #222;
+  font-size: 1.5rem;
+  /* border: 1px solid rgb(0, 0, 0); */
+  margin: 10px 2px;
+  overflow: hidden;
+  border-radius: 0% 37% 0% 39% / 40% 45% 32% 47%;
+}
+.btn:hover {
+  background-color: rgb(243, 58, 25);
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+}

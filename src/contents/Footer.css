@@ -1,0 +1,86 @@
+.footer-wrapper {
+  background-color: black;
+  display: flex;
+  width: 100vw;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper .left {
+  min-width: 500px;
+  background-color: #f1356d4f;
+}
+.footer-wrapper .right {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+.footer-wrapper .right .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  margin: ;
+}
+
+.footer-wrapper .right .links ul {
+  padding: 0;
+}
+
+.footer-wrapper .right .links li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.footer-wrapper .right .links li:hover {
+  color: #f1356d;
+}
+
+.footer-wrapper .right .links .logo {
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: #f1356d;
+}
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width:600px; */
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.copy-right {
+  text-transform: capitalize;
+  text-align: center;
+}

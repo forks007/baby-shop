@@ -1,0 +1,75 @@
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-transform: capitalize;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  /* flex: 1; */
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .icons {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card .icons i {
+  font-size: 1.5rem;
+  color: rgb(26, 18, 8);
+  padding: 4px;
+  cursor: pointer;
+}
+.card .icons i:hover {
+  color: red;
+}
+.card .image {
+  max-height: 80%;
+  overflow: hidden;
+}
+.card img {
+  min-width: 400px;
+  /* max-width: 100%; */
+  height: 250px;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+.card:hover > .image img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.card h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.card span {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+.card .previous {
+  text-decoration: line-through;
+}
+.card .description {
+  padding: 1rem;
+}

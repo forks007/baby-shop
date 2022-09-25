@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  /* font-family: sans-serif; */
+  text-align: center;
+}

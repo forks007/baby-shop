@@ -1,0 +1,30 @@
+.services-strap {
+  background-color: var(--bg-color-one);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0.3rem 0;
+}
+.service {
+  padding: 0.5rem;
+  min-width: 200px;
+  text-align: center;
+  flex: 1;
+}
+.service i {
+  font-size: 3rem;
+  padding: 10px;
+  background-color: white;
+  clip-path: ellipse(50% 49% at 50% 50%);
+}
+.service h2 {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+}
